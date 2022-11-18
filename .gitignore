@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/haarcascade_frontalface_default.xml
+.idea

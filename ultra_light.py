@@ -13,7 +13,7 @@ from face_detectors import *
 from face_detectors.utils import annotate_image
 
 
-def benchmark_ultra_light(width=640, height=480, rep=1, save_out=True, model="320"):
+def benchmark_ultra_light(width=640, height=480, rep=1, save_out=False, model="320"):
     if model == "640":
         detector = Ultralight640Detector()
     else:

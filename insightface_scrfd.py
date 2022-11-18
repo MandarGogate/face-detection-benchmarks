@@ -11,7 +11,7 @@ import imutils
 from insightface.app import FaceAnalysis
 
 
-def benchmark_insightface_scrfd(width=640, height=480, rep=1, save_out=True, model="buffalo_sc"):
+def benchmark_insightface_scrfd(width=640, height=480, rep=1, save_out=False, model="buffalo_sc"):
     app = FaceAnalysis(name=model, allowed_modules=['detection'],
                        providers=['CPUExecutionProvider'])  # enable detection model only
     app.prepare(ctx_id=0, det_size=(640, 640))

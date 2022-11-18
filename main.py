@@ -29,7 +29,7 @@ for height, width in ((1080, 1920),(720, 1280), (360, 640)):
     for model, func in zip(["Dlib HOG", "OpenCV Haar", "MTCNN TensorFlow", "MTCNN OpenCV", "InsightFace SCRFD 500MF", "InsightFace SCRFD 10GF", "Ultra-Light-320", "Ultra-Light-640", "Mediapipe BlazeFace"],
                            [benchmark_dlib_hog, benchmark_opencv_haar, benchmark_mtcnn_tensorflow, benchmark_mtcnn_opencv, benchmark_insightface_scrfd, benchmark_insightface_scrfd,
                             benchmark_ultra_light, benchmark_ultra_light, benchmark_mediapipe_blazeface]):
-        params = dict(width=width, height=height, rep=1, save_out=False)
+        params = dict(width=width, height=height, rep=10, save_out=False)
         if model == "InsightFace SCRFD 10GF":
             params["model"] = "buffalo_l"
         if model == "Ultra-Light-640":
